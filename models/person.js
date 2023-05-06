@@ -14,7 +14,7 @@ mongoose.connect(url)
     })
 
 function numberValidator(num) {
-    return /^(\d{2}|\d{3}[-]\d+)$/.test(num)
+    return /^(\d{2}|\d{3})[-]\d+$/.test(num)
 }
 
 const personSchema = new mongoose.Schema({
